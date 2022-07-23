@@ -1,0 +1,451 @@
+/**Esta es la barra de navegacion mano*/
+*{
+    font-family:'Roboto',sans-serif;
+    color: black;
+}
+
+
+#pills-tab{
+    display: flex;
+    justify-content: end;
+    padding:10px;
+    background-color: rgb(219, 236, 244);
+    font-size:20px;
+}
+.nav-item{
+    padding:0px;
+
+}
+img{
+    margin:auto;
+    justify-content: flex-start;
+}
+.menu-toggle{
+    display: none;
+    margin-left: auto;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+#noticias{
+    display: flex;
+    justify-content: center;
+
+}
+#noticias img{
+    width: 18rem;
+    height:10rem;
+
+}
+#noticias .card{
+    width: 20rem;
+    height: 20rem;
+}
+#info{
+    width: 80%;
+    display: flex;
+    font-size:23px;
+    margin: auto;
+
+}
+#info img{
+    border-radius: 20px;
+    margin: 10px;
+}
+#info p{
+    margin:20px;
+}
+#ubicacion{
+    width:80%;
+    display: flex;
+    font-size: 20px;
+    margin: auto;
+}
+#ubicacion img{
+    border-radius: 20px;
+}
+iframe{
+    border-radius:30px;
+}
+#grados{
+    display: flex;
+    justify-content: center;
+
+}
+#grados img{
+    border-radius: 20px;
+    width: 18rem;
+    height:12rem;
+}
+#grados h3{
+    text-align: center;
+}
+#ofr{
+    margin:auto;
+}
+#inicial, #primaria, #secundaria{
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 7px 13px 50px  rgb(219, 236, 244);
+
+}
+@media screen and  (max-width:723px){
+    /**esta es la barra de navegacion en media **/
+    .menu-toggle{
+        display: block;
+    }
+    .show{
+        height:100% !important;
+    }
+    footer{
+        display: none;
+    }
+    #cabeza{
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(219, 236, 244);
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        height: 0;
+        border: 1px solid rgb(249, 249, 249) ;
+        overflow: hidden;
+        transition: .5s ease-out;
+        align-items: center;
+
+    }
+    #cabeza ul{
+        display:block;
+    }
+    #noticias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    #inicio{
+        width: 95%;
+        margin: auto;
+    }
+    #noticias .card{
+        width: 70%;
+        height: 20rem;
+    }
+    #noticias img{
+        width:100%;
+        height:10rem;
+    
+    }
+    #grados{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    #grados img{
+        margin:20px 20px 20px 20px;
+
+    }
+    #secti{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #tabla{
+        font-size: x-small;
+        width: 100%;
+    }
+    #primero, #segundo{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #misi, #visi{
+        display:flex;
+        flex-direction: column;
+    }
+    #imagess{
+        width:100%;
+        
+    }
+    #info{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+    }
+    #info img{
+        width: 100%;
+    }
+    #ubicacion{
+        width:80%;
+        display: flex;
+        font-size: 20px;
+        flex-direction: column;
+    }
+    #ubicacion img{
+        width: 100%;
+    }
+    #ubicacion iframe{
+        margin: 15%;
+        width:70%;
+        height:50%;
+    }
+
+
+
+
+
+}
+    /**aqui acaba la baara de navegacion en media **/
+    /**utiles**/
+    #target{
+        flex-wrap: wrap;
+    }
+
+
+#cabeza{
+    display: flex;
+
+}
+
+/**aqui termina la barra de navegacion**/
+/** Formulario**/
+#contenedor{
+    margin: 20px;
+    padding: 20px;
+}
+#secti{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    height:100%px;
+    width:70%;
+    display: flex;
+    margin:auto;
+    margin-top:100px;
+    padding: 5px;
+    box-shadow: 7px 13px 50px  rgb(219, 236, 244);
+}
+#imagens{
+    border-radius: 6px;
+    margin:20px 20px 20px 20px;
+}
+.ingre{
+    align-items: center;
+    color:rgb(0, 0, 0);
+    border: 2px solid  rgb(219, 236, 244);
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    margin: 0px 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#envio{
+    background-color:rgb(176, 0, 0);
+    align-self: center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    margin:10px;
+}
+p{
+    text-align: center;
+}
+a{
+    color: rgb(0, 0, 0);
+}
+select{
+    width: 100%;
+    margin:0px;
+    padding: 10px;
+    border: 2px solid  rgb(219, 236, 244);
+    border-radius: 10px;
+}
+
+@media (min-width:723px) and (max-width:1200px){
+    #cabeza{
+        margin: auto;
+    }
+    #secti{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #noticias img{
+        width:100%;
+        height:10rem;
+    
+    }
+    #grados img{
+        margin:auto;
+        height:10rem;
+        width:14rem;
+
+    }
+    #ubicacion{
+        width:80%;
+        display: flex;
+        font-size: 20px;
+        flex-direction: column;
+    }
+    #ubicacion iframe{
+        margin: 15%;
+        width:70%;
+        height:50%;
+    }
+    #misi, #visi{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #info img{
+        width: 50%;
+    }
+    #misi img{
+        width: 80%;
+    }
+    #visi img{
+        width: 80%;
+    }
+
+
+}
+
+
+/**Fin de formulario**/
+#mision, #vision{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+#misi, #visi{
+    display:flex;
+    justify-content: center;
+
+}
+#primero, #segundo{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin:20px;
+    
+}
+.card-body{
+    border: 0;
+    box-shadow: 7px 13px 50px  rgb(219, 236, 244);
+}
+/**utiles escolares**/
+
+.utiles{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    box-shadow: 7px 13px 50px  rgb(219, 236, 244);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+#target{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: solid 2px rgb(219, 236, 244) ;
+
+    
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+/**fin de utiles escolares**/
+/**CALCULADORA**/
+#appBg{
+    margin: auto;
+    height:450px;
+    width:300px;
+    border-radius: 20px;
+    box-shadow: 7px 13px 50px  rgb(219, 236, 244);
+}
+#appBg form{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 20px;
+}
+#appBg input[type=textfield]{
+    border-radius: 20px;
+    height: 25%;
+    width: 100%;
+    cursor: default;
+    font-family:'Roboto',sans-serif;
+    background-color:  rgb(219, 236, 244);
+    color:rgb(0, 0, 0);
+    padding:15px;
+    text-align: right;
+    font-size:50px;
+    border: 0;
+    outline:none;
+
+}
+#appBg input[type=button], input[type=reset]{
+    width: 20%;
+    cursor: pointer;
+    font-family:'Roboto',sans-serif;
+    font-weight:bold;
+    font-size:26px;
+    color: black;
+    padding:18px;
+    margin:3px;
+    border:0;
+    border-radius:100%;
+}
+#tabla{
+    margin:auto;
+    border:0;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 7px 13px 50px  rgb(219, 236, 244);
+}
+#tabla tr td input{
+    height: 5%;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid 2px rgb(219, 236, 244)  ;
+}
+#PuntosEntabla{
+    height:50%;
+    width:60%;
+    border:0;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 7px 13px 50px  rgb(219, 236, 244);
+}
+#PuntosEntabla tr th{
+    
+    margin: 10px;
+    padding:10px;
+}
+#boton{
+    margin: 10px 40%;
+    border: 0;
+    border-radius: 20px;
+    background-color:  rgb(219, 236, 244) ;
+
+}
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer #pie{
+    display: flex;
+    justify-content: center;
+}
+footer #pie i{
+    margin: 10px;
+}
